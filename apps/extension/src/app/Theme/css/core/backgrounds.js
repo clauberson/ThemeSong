@@ -12,6 +12,7 @@ export const backgrounds = /*css*/ `
   --ts-body-alpha-gradient-color: var(--ts-body-color);
 
   --ts-bgcolor-transition: background 0.3s linear;
+  --yt-spec-inverted-background: var(--ts-body-color);
 }
 
 :root {
@@ -231,5 +232,10 @@ ytmusic-browse-response[has-background][page-type=MUSIC_PAGE_TYPE_NON_MUSIC_AUDI
 /* when searching for something */
 html[light] .immersive-background.ytmusic-card-shelf-renderer ytmusic-fullbleed-thumbnail-renderer.ytmusic-card-shelf-renderer {
   filter: blur(60px) brightness(3) saturate(2);
+}
+
+ytmusic-network-status-banner[current-state=OFFLINE] {
+  background-color: var(--ts-playerbar-color);
+  border-top: 1px solid #00000033;
 }
 `;

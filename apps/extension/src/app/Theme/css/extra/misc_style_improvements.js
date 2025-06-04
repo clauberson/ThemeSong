@@ -165,7 +165,7 @@ export const popupStyling = /*css*/ `
 /* on playerpage, when collapsing and un-collapsing sidebar, 
 a scrollbar track shows up on the right. */
 export const playerPageScrollbarShowsWhenSidebar = /*css*/ `
-  html:has(#layout[player-ui-state="PLAYER_PAGE_OPEN"]) {
+  html[os="windows"]:has(#layout[player-ui-state="PLAYER_PAGE_OPEN"]) {
     scrollbar-width: none;
     margin-right: 17px;
   }
@@ -282,6 +282,15 @@ export const compactListBox = /*css*/ `
   tp-yt-paper-listbox yt-icon, tp-yt-paper-listbox .yt-icon-container.yt-icon {
     width: var(--iron-icon-width, 19px);
     height: var(--iron-icon-height, 19px);
+  }
+
+  tp-yt-paper-item.ytmusic-menu-service-item-download-renderer {
+    --paper-item-min-height: 38px;
+    padding: 0 14px;
+  }
+
+  yt-icon.ytmusic-menu-service-item-download-renderer {
+    margin-right: 13px;
   }
 `;
 

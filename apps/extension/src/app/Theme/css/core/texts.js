@@ -6,6 +6,7 @@ export const texts = /*css*/ `
   --ts-inverse-text-color: var(--ts-base-00-color);
   --ts-primary-text-alpha-color: var(--ts-base-100-alpha-07-color);
   --ts-secondary-text-alpha-color: var(--ts-base-100-alpha-03-color);
+  --yt-spec-static-overlay-text-secondary: var(--ts-base-100-alpha-07-color);
 }
 
 :root {
@@ -320,5 +321,48 @@ ytmusic-shelf-renderer[is-bauhaus-web-detail-page-redesign-enabled] .title.ytmus
   --yt-endpoint-color: var(--ts-primary-text-color);
   --yt-endpoint-hover-color: var(--ts-primary-text-color);
   --yt-endpoint-visited-color: var(--ts-primary-text-color);
+}
+
+.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text {
+  color: var(--ts-base-blue);
+}
+
+yt-formatted-string.ytmusic-menu-service-item-download-renderer {
+  color: var(--ts-primary-text-color);
+}
+
+yt-formatted-string.ytmusic-menu-service-item-download-renderer {
+  color: var(--ts-primary-text-color);
+}
+
+#text.yt-notification-action-renderer, #sub-text.yt-notification-action-renderer {
+  color: var(--ts-primary-text-color);
+}
+
+ytmusic-responsive-header-renderer[is-playlist-detail-page] .strapline-text.ytmusic-responsive-header-renderer, ytmusic-responsive-header-renderer[is-album-detail-page] .strapline-text.ytmusic-responsive-header-renderer {
+    color: var(--ts-primary-text-color);
+    --yt-endpoint-color: var(--ts-primary-text-color);
+    --yt-endpoint-hover-color: var(--ts-primary-text-color);
+    --yt-endpoint-visited-color: var(--ts-primary-text-color);
+}
+
+ytmusic-shelf-renderer[is-playlist-detail-page] .title.ytmusic-shelf-renderer>yt-formatted-string.ytmusic-shelf-renderer, ytmusic-shelf-renderer[is-album-detail-page] .title.ytmusic-shelf-renderer>yt-formatted-string.ytmusic-shelf-renderer {
+    color: var(--ts-primary-text-color);
+    --yt-endpoint-color: var(--ts-primary-text-color);
+    --yt-endpoint-hover-color: var(--ts-primary-text-color);
+    --yt-endpoint-visited-color: var(--ts-primary-text-color);
+}
+
+tp-yt-iron-input.tp-yt-paper-input>input.tp-yt-paper-input {
+  color: var(--ts-primary-text-color);
+}
+
+.ytmusicMultiPageMenuRendererHost {
+    --yt-spec-call-to-action: var(--ts-base-blue);
+    --yt-endpoint-hover-color: var(--ts-base-blue);
+}
+
+.section-title.ytmusic-dismissable-dialog-renderer {
+    color: var(--ts-primary-text-color);
 }
 `;
